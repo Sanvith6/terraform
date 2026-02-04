@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+terra-key-ec2
+terra-key-ec2.pub
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
