@@ -223,3 +223,9 @@ terraform.tfstate.backup
 .vscode/
 .idea/
 
+
+
+# SSH keys
+terra-key-ec2
+terra-key-ec2.pub
+*.pem
