@@ -26,4 +26,10 @@ resource "aws_lambda_function" "daily_report" {
   source_code_hash = filebase64sha256("${path.module}/lambda/daily_report.zip")
 
   timeout = 15
+
+  environment {
+    variables = {
+      BUCKET_NAME = aws_s3_bucket.s3_bucket.bucket
+    }
+  }
 }

@@ -1,10 +1,11 @@
 import boto3
 import json
+import os
 from datetime import date
 
 s3 = boto3.client("s3")
 
-BUCKET_NAME = "task-bucket-2026"
+BUCKET_NAME = os.getenv("BUCKET_NAME", "task-bucket-2026")
 PREFIX = "events/"
 
 def lambda_handler(event, context):

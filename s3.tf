@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "task-bucket-2026"
+  bucket = var.bucket_name
 
   tags = {
     Name        = "task-bucket"

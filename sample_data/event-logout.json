@@ -1,0 +1,7 @@
+{
+  "event_id": "evt-1002",
+  "user_id": "user-43",
+  "event_type": "logout",
+  "source": "web_app",
+  "timestamp": "2026-02-05T10:16:30Z"
+}

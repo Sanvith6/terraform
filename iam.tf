@@ -33,14 +33,14 @@ resource "aws_iam_role_policy" "lambda_s3_policy" {
         Action = [
           "s3:ListBucket"
         ]
-        Resource = "arn:aws:s3:::task-bucket-2026"
+        Resource = aws_s3_bucket.s3_bucket.arn
       },
       {
         Effect = "Allow"
         Action = [
           "s3:GetObject"
         ]
-        Resource = "arn:aws:s3:::task-bucket-2026/*"
+        Resource = "${aws_s3_bucket.s3_bucket.arn}/*"
       }
     ]
   })
